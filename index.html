@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANONY'X OVER CRACK | Accès Illimité aux Apps Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --black: #0A0A0A;
+            --dark: #121212;
+            --neon-cyan: #00FEFE;
+            --neon-magenta: #FF00FF;
+            --text-light: #E0E0E0;
+            --text-gray: #8A8A8A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark) 100%);
+            border-bottom: 1px solid rgba(0, 254, 254, 0.1);
+            position: relative;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--neon-cyan), var(--neon-magenta));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(0, 254, 254, 0.3);
+            margin-bottom: 1rem;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px var(--neon-cyan);
+            }
+            to {
+                text-shadow: 0 0 20px var(--neon-magenta), 0 0 10px var(--neon-cyan);
+            }
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: rgba(255, 0, 255, 0.1);
+            border: 1px solid var(--neon-magenta);
+            border-radius: 8px;
+            font-size: 1rem;
+            margin: 1rem 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 0, 255, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 0, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 0, 255, 0); }
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 3rem 0 1.5rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, var(--neon-cyan), var(--neon-magenta));
+            margin: 0.5rem auto;
+        }
+
+        /* App Examples */
+        .app-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .app-item {
+            background-color: var(--dark);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 3px solid var(--neon-cyan);
+            transition: all 0.3s ease;
+        }
+
+        .app-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 254, 254, 0.1);
+        }
+
+        .app-icon {
+            font-size: 2rem;
+            color: var(--neon-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .app-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background-color: var(--dark);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid rgba(0, 254, 254, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--neon-magenta);
+            margin-bottom: 1rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, rgba(0, 254, 254, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+            margin: 3rem 0;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(to right, var(--neon-cyan), var(--neon-magenta));
+            color: var(--black);
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 254, 254, 0.5);
+            border: none;
+            cursor: pointer;
+            margin-top: 1.5rem;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 0, 255, 0.7);
+        }
+
+        /* App Pills */
+        .app-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .app-pill {
+            padding: 0.5rem 1rem;
+            background-color: rgba(0, 254, 254, 0.1);
+            border: 1px solid var(--neon-cyan);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .app-pill:hover {
+            background-color: rgba(0, 254, 254, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 3rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--dark);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 254, 254, 0.1);
+        }
+
+        .stars {
+            color: gold;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--neon-cyan);
+        }
+
+        /* Registration Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: var(--dark);
+            margin: 10% auto;
+            padding: 2rem;
+            border: 1px solid var(--neon-cyan);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: var(--neon-magenta);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--black);
+            border: 1px solid var(--neon-cyan);
+            border-radius: 4px;
+            color: white;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: scale(1.05);
+        }
+
+        /* Floating WhatsApp Button */
+        .float-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.8rem;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .float-whatsapp:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--dark);
+            border-top: 1px solid rgba(0, 254, 254, 0.1);
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--neon-cyan);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .highlight-box {
+                font-size: 0.9rem;
+                padding: 0.6rem 1rem;
+            }
+            
+            .app-examples {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                margin: 20% auto;
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/22656967818" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header>
+        <div class="logo">ANONY'X OVER CRACK</div>
+        <div class="tagline">La puissance ultime de craquage d'applications premium</div>
+        <div class="highlight-box">
+            <i class="fas fa-infinity"></i> Accès illimité aux apps crackées
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Exemples d'Applications Disponibles</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-gray);">
+                Ce ne sont que quelques exemples parmi des milliers de possibilités
+            </p>
+            
+            <div class="app-examples">
+                <div class="app-item">
+                    <div class="app-icon"><i class="fab fa-spotify"></i></div>
+                    <h3 class="app-name">Spotify Premium</h3>
+                    <p>Musique sans pub avec téléchargement offline</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fas fa-film"></i></div>
+                    <h3 class="app-name">Netflix Premium</h3>
+                    <p>Tous les contenus VIP débloqués</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fab fa-youtube"></i></div>
+                    <h3 class="app-name">YouTube Premium</h3>
+                    <p>Vidéos sans publicité et mode offline</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3 class="app-name">GB WhatsApp</h3>
+                    <p>Version premium avec options avancées</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fas fa-camera-retro"></i></div>
+                    <h3 class="app-name">Photoshop Pro</h3>
+                    <p>Tous les outils créatifs déverrouillés</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fab fa-telegram"></i></div>
+                    <h3 class="app-name">Telegram Premium</h3>
+                    <p>Fonctionnalités exclusives activées</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="app-name">VPN Premium</h3>
+                    <p>Protection complète sans limites</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3 class="app-name">Jeux Premium</h3>
+                    <p>Débloquez tous les achats intégrés</p>
+                </div>
+                
+                <div class="app-item">
+                    <div class="app-icon"><i class="fas fa-book"></i></div>
+                    <h3 class="app-name">Livres & Éducation</h3>
+                    <p>Accès aux contenus payants</p>
+                </div>
+            </div>
+            
+            <div class="app-pills">
+                <!-- Streaming & Musique -->
+                <span class="app-pill">Canal+</span>
+                <span class="app-pill">Showmax</span>
+                <span class="app-pill">Netflix</span>
+                <span class="app-pill">Spotify</span>
+                <span class="app-pill">YouTube Premium</span>
+                <span class="app-pill">Boomplay</span>
+                <span class="app-pill">Audiomack</span>
+                
+                <!-- Réseaux sociaux premium -->
+                <span class="app-pill">Instagram Blue</span>
+                <span class="app-pill">X Premium</span>
+                <span class="app-pill">Snapchat+</span>
+                
+                <!-- Apps de rencontre -->
+                <span class="app-pill">Tinder Gold</span>
+                <span class="app-pill">Bumble Premium</span>
+                
+                <!-- Messagerie -->
+                <span class="app-pill">WhatsApp Business</span>
+                <span class="app-pill">Telegram Premium</span>
+                
+                <!-- Montage vidéo/photo -->
+                <span class="app-pill">CapCut Pro</span>
+                <span class="app-pill">InShot Pro</span>
+                <span class="app-pill">PicsArt Gold</span>
+                
+                <!-- Productivité -->
+                <span class="app-pill">Microsoft 365</span>
+                <span class="app-pill">WPS Office</span>
+                
+                <!-- VPN & Sécurité -->
+                <span class="app-pill">ExpressVPN</span>
+                <span class="app-pill">NordVPN</span>
+                
+                <!-- Jeux -->
+                <span class="app-pill">Free Fire Max</span>
+                <span class="app-pill">PUBG Mobile</span>
+                
+                <!-- Livres & Éducation -->
+                <span class="app-pill">Udemy</span>
+                <span class="app-pill">Coursera</span>
+                
+                <!-- Autres apps populaires -->
+                <span class="app-pill">ChatGPT Plus</span>
+                <span class="app-pill">Adobe Photoshop</span>
+                <span class="app-pill">Premiere Pro</span>
+                <span class="app-pill">Canva Pro</span>
+                <span class="app-pill">Notion Pro</span>
+                <span class="app-pill">Shazam Premium</span>
+                <span class="app-pill">Duolingo Plus</span>
+                <span class="app-pill">Headspace</span>
+                <span class="app-pill">MyFitnessPal</span>
+                <span class="app-pill">1Password</span>
+                <span class="app-pill">Grammarly</span>
+                <span class="app-pill">Filmora</span>
+                <span class="app-pill">VSCO Pro</span>
+                <span class="app-pill">Snapseed Pro</span>
+                <span class="app-pill">LinkedIn Premium</span>
+                <span class="app-pill">Disney+</span>
+                <span class="app-pill">Deezer</span>
+                <span class="app-pill">Apple Music</span>
+                <span class="app-pill">Crunchyroll</span>
+                <span class="app-pill">Amazon Prime</span>
+                <span class="app-pill">Tidal</span>
+                <span class="app-pill">SoundCloud Go+</span>
+            </div>
+            
+            <div style="text-align: center; margin: 2rem 0;">
+                <div class="highlight-box">
+                    <i class="fas fa-ellipsis-h"></i> Et des centaines d'autres <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Comment ça marche ?</h2>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-download"></i></div>
+                    <h3>1. Téléchargement</h3>
+                    <p>Recevez notre kit complet de craquage après achat de la formation en craquing</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-magic"></i></div>
+                    <h3>2. Activation</h3>
+                    <p>Suivez notre guide simple pour débloquer n'importe quelle app</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>3. Profitez</h3>
+                    <p>Accès illimité aux fonctionnalités premium</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Devenez Maître des Applications Premium</h2>
+            <p>Avec ANONY'X OVER PACK, crackez vous-même toutes les apps que vous voulez</p>
+            <button class="cta-button" id="open-register">S'inscrire Maintenant</button>
+            
+            <div style="margin-top: 2rem;">
+                <div class="highlight-box">
+                    <i class="fas fa-gem"></i> Prix spécial : 7 500 FCFA à vie
+                </div>
+                </div>
+        </section>
+
+             <section class="testimonials">
+            <h2 class="section-title">Ils nous font confiance</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"J'ai cracké plus de 50 apps différentes sans aucun problème. La méthode est infaillible."</p>
+                    <p class="testimonial-author">- Marc D., Abidjan</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                 <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Le support m'a aidé à cracker des apps très rares que je ne trouvais nulle part ailleurs."</p>
+                    <p class="testimonial-author">- Aminata K., Ouaga</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    <div class="testimonial">
+    <p class="testimonial-text">"Franchement, j'ai été bluffé par l'efficacité. Merci pour cette solution incroyable !"</p>
+    <p class="testimonial-author">- Idrissa Z., Ouagadougou</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Une pépite ! En tant qu’étudiant, ça m’a sauvé."</p>
+    <p class="testimonial-author">- Aïssata K., Bobo-Dioulasso</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Ce site mérite une médaille. Je recommande à tous mes amis."</p>
+    <p class="testimonial-author">- Ismaël N., Koudougou</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Simple, rapide et efficace. Le top du top."</p>
+    <p class="testimonial-author">- Souleymane B., Kaya</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"J'ai économisé tellement d'argent grâce à ce service. Bravo !"</p>
+    <p class="testimonial-author">- Fatoumata D., Tenkodogo</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"C’est comme si j’avais trouvé un trésor caché. Merci infiniment."</p>
+    <p class="testimonial-author">- Abdoul R., Ziniaré</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"J’étais sceptique au début, mais maintenant je suis fan."</p>
+    <p class="testimonial-author">- Mariam S., Ouahigouya</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Une vraie révolution numérique au Burkina !"</p>
+    <p class="testimonial-author">- David L., Gaoua</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Enfin un projet local qui rivalise avec les géants. Fier d’être Burkinabè."</p>
+    <p class="testimonial-author">- Karim O., Dori</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Ce service m’aide chaque jour, je suis accro."</p>
+    <p class="testimonial-author">- Awa Z., Banfora</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Top qualité, top service, top design."</p>
+    <p class="testimonial-author">- Yacouba T., Fada N’Gourma</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Même mon petit frère en primaire comprend comment l’utiliser. Bravo pour l’ergonomie."</p>
+    <p class="testimonial-author">- Salif D., Réo</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Je l’ai recommandé à tout mon groupe WhatsApp !"</p>
+    <p class="testimonial-author">- Blandine M., Kombissiri</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Ce genre d’innovation change la vie des gens. Merci SPIRITY."</p>
+    <p class="testimonial-author">- Rodrigue P., Yako</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Un outil très utile pour les professionnels comme moi."</p>
+    <p class="testimonial-author">- Aminata S., Diébougou</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Service ultra rapide, je n’en reviens pas."</p>
+    <p class="testimonial-author">- Harouna C., Toma</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Le meilleur outil que j’ai utilisé cette année."</p>
+    <p class="testimonial-author">- Viviane T., Ouagadougou</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Ça dépasse même les services étrangers ! Continuez comme ça."</p>
+    <p class="testimonial-author">- Mamadou B., Abidjan</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Je ne peux plus m’en passer. Merci à toute l’équipe."</p>
+    <p class="testimonial-author">- Khadidiatou A., Dakar</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Fiable, rapide, local. Que demander de plus ?"</p>
+    <p class="testimonial-author">- Adama G., Niamey</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Un ami me l’a recommandé et je le remercie encore aujourd’hui."</p>
+    <p class="testimonial-author">- Ibrahim T., Bamako</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"J’adore la simplicité. Même ma mère l’utilise maintenant."</p>
+    <p class="testimonial-author">- Sonia K., Ouagadougou</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Interface propre, fonctionnalités utiles. Rien à redire."</p>
+    <p class="testimonial-author">- Moussa Y., Bobo-Dioulasso</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Ce genre de projet mérite d’être soutenu par l’État."</p>
+    <p class="testimonial-author">- Soukeyna Z., Koupéla</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"J’ai économisé grâce à vous. Vous êtes les meilleurs."</p>
+    <p class="testimonial-author">- Gaétan M., Léo</p>
+</div>
+<div class="testimonial">
+    <p class="testimonial-text">"Fiable même avec une petite connexion. J’adore !"</p>
+    <p class="testimonial-author">- Aminata D., Pô</p>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--neon-cyan);">Inscription</h2>
+            <div class="form-group">
+                <label for="name">Nom Complet</label>
+                <input type="text" id="name" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Votre email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" placeholder="Votre numéro WhatsApp">
+            </div>
+            <div style="text-align: center;">
+                <a href="https://wa.me/22656967818?text=Je%20souhaite%20m'inscrire%20à%20ANONYX%20OVER%20PACK" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Envoyer via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Créé avec fierté par SPIRITY, l'expert en solutions digitales</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="https://wa.me/22656967818" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>© 2025 ANONY'X OVER PACK. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Animation for CTA button
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButton = document.querySelector('.cta-button');
+            
+            ctaButton.addEventListener('mouseover', function() {
+                this.style.background = `linear-gradient(to right, ${getComputedStyle(document.documentElement).getPropertyValue('--neon-magenta')}, ${getComputedStyle(document.documentElement).getPropertyValue('--neon-cyan')})`;
+            });
+            
+            ctaButton.addEventListener('mouseout', function() {
+                this.style.background = `linear-gradient(to right, ${getComputedStyle(document.documentElement).getPropertyValue('--neon-cyan')}, ${getComputedStyle(document.documentElement).getPropertyValue('--neon-magenta')})`;
+            });
+            
+            // Animate elements on scroll
+            const animateElements = document.querySelectorAll('.app-item, .app-pill, .feature-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.5s ease';
+                observer.observe(el);
+            });
+
+            // Modal functionality
+            const modal = document.getElementById("registerModal");
+            const btn = document.getElementById("open-register");
+            const span = document.getElementsByClassName("close-modal")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            // WhatsApp redirection with form data
+            const whatsappBtn = document.querySelector('.whatsapp-btn');
+            whatsappBtn.addEventListener('click', function() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                
+                let message = `Je souhaite m'inscrire à ANONY'X OVER PACK%0A%0A`;
+                message += `Nom: ${name || 'Non renseigné'}%0A`;
+                message += `Email: ${email || 'Non renseigné'}%0A`;
+                message += `Téléphone: ${phone || 'Non renseigné'}`;
+                
+                this.href = `https://wa.me/22603996469?text=${message}`;
+            });
+        });
+    </script>
+</body>
+</html>
